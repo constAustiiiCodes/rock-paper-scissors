@@ -1,3 +1,9 @@
+function getHumanChoice() {
+    const humanChoice = prompt();
+    return humanChoice;
+}
+console.log(getHumanChoice());
+
 function getComputerChoice() {
     let computerChoice = Math.random() * 3;
     if (computerChoice <= 1) {
