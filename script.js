@@ -51,14 +51,16 @@ function playGame() {
         playRound(humanChoice, computerChoice);
         round++
     }
-        
-    if (humanScore == computerScore) {
-        console.log("Hard luck, it's a tie!");
-    } else if (humanScore > computerScore) {
-        console.log("Congratulations, you won the game!");
-    } else if (humanScore < computerScore){
-        console.log("Oops, you lost the game to a robot!");
+    
+    function Winner() {
+        if (humanScore == computerScore) {
+            console.log("Hard luck, it's a tie!");
+        } else if (humanScore > computerScore) {
+            console.log("Congratulations, you won the game!");
+        } else if (humanScore < computerScore){
+            console.log("Oops, you lost the game to a robot!");
+        }
     }
-
+    Winner();
 }
 playGame();
