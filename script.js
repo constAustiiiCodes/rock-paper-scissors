@@ -59,7 +59,7 @@ function playGame() {
     }
         
     if (humanScore == computerScore) {
-        console.log("Hard game, it's a tie!");
+        console.log("Hard luck, it's a tie!");
     } else if (humanScore > computerScore) {
         console.log("Congratulations, you won the game!");
     } else if (humanScore < computerScore){
